@@ -1,0 +1,19 @@
+# 一页的数据分四个接口返回
+
+
+https://list.suning.com/emall/searchV1Product.do?ci=243505&pg=03&cp=0&il=0&iy=0&isNoResult=0&n=1&sesab=&id=IDENTIFYING&cc=010&paging=5&sub=0&jzq=7896
+# 其中 paging 为翻页 测试了一下 一个链接 返回30 个商品
+# 0 ， 1 ，2 ，3 刚好120个商品
+
+# 发现 价格是ajax获取的
+# 价格api https://ds.suning.com/ds/generalForTile/000000010546607020_____-010-2-0000000000-1--ds0000000008417.jsonp?callback=ds0000000008417
+
+
+# 出现商品价格错误会存队列 防止商品信息丢失
+
+# 或则直接模拟浏览器打开 更加暴力一点 直接获取整页数据 
+
+
+
+
+*** 没有加代理，没有加 headers 和 cookies 等等 ，只是测试了效果，具体有需要可以按需求加
